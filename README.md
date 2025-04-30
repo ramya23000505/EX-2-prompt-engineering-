@@ -27,13 +27,16 @@ The model is asked to perform a task without any prior examples.
 Used for defining concepts or initiating tasks from scratch.
 
 **Example Scenario:**  
-**PROMPT:** “Describe common signs of equipment failure based on temperature and vibration changes.”
+## **PROMPT:**
+“Describe common signs of equipment failure based on temperature and vibration changes.”
 
-**AI Tools Response**
+## **AI Tools Response**
 
-**ChatGPT** Common signs of equipment failure often manifest as abnormal changes in temperature and vibration patterns. An increase in temperature beyond normal operating levels can indicate issues such as friction due to lack of lubrication, bearing wear, or electrical faults like overheating motors. Elevated vibration levels are typically early indicators of mechanical problems such as imbalance, misalignment, loose parts, or worn components. When temperature and vibration increase simultaneously, it often suggests compound issues, such as bearing failure or shaft misalignment causing heat due to excessive friction. Monitoring these parameters over time helps in detecting trends and triggering maintenance actions before actual breakdowns occur.
+## **ChatGPT** 
+Common signs of equipment failure often manifest as abnormal changes in temperature and vibration patterns. An increase in temperature beyond normal operating levels can indicate issues such as friction due to lack of lubrication, bearing wear, or electrical faults like overheating motors. Elevated vibration levels are typically early indicators of mechanical problems such as imbalance, misalignment, loose parts, or worn components. When temperature and vibration increase simultaneously, it often suggests compound issues, such as bearing failure or shaft misalignment causing heat due to excessive friction. Monitoring these parameters over time helps in detecting trends and triggering maintenance actions before actual breakdowns occur.
 
-**Sider** Equipment failure often manifests through certain signs in temperature and vibration data. An increase in temperature beyond normal operating ranges can indicate overheating, bearing issues, or lubrication problems. Similarly, abnormal vibration patterns—such as higher amplitude or unusual frequency components—may suggest misalignment, imbalance, or worn-out parts. Monitoring these indicators helps in early detection of potential failures, allowing for timely maintenance to prevent costly breakdowns.
+## **Sider** 
+Equipment failure often manifests through certain signs in temperature and vibration data. An increase in temperature beyond normal operating ranges can indicate overheating, bearing issues, or lubrication problems. Similarly, abnormal vibration patterns—such as higher amplitude or unusual frequency components—may suggest misalignment, imbalance, or worn-out parts. Monitoring these indicators helps in early detection of potential failures, allowing for timely maintenance to prevent costly breakdowns.
 
 ---
 ### 2. One-shot Prompting
@@ -45,11 +48,12 @@ The model receives a single example to mimic.
 Good for generating structured data based on a known pattern.
 
 **Example Scenario:**  
-**PROMPT:** Provide one sensor log with analysis, then ask the model to analyze a similar new log.
+## **PROMPT:** 
+Provide one sensor log with analysis, then ask the model to analyze a similar new log.
 
-**AI Tools Response**
+## **AI Tools Response**
 
-**ChatGPT**  
+## **ChatGPT**  
 
 **Timestamp:** 2025-04-30 11:15:00  
 **Machine ID:** MX-104  
@@ -57,17 +61,14 @@ Good for generating structured data based on a known pattern.
 **Vibration (mm/s):** 7.5  
 **Pressure (bar):** 4.6
 
-**Sider**
+## **Sider**
 
 **Timestamp:**  2025-04-28 09:30:00  
-
 **Machine ID:** MX-102  
-
 **Temperature (°C):** 85  
-
 **Vibration (mm/s):** 7.2  
-
 **Pressure (bar):** 4.8
+
 ---
 
 ### 3. Few-shot Prompting
@@ -79,12 +80,13 @@ Multiple examples are provided to help the model understand the pattern.
 Effective for failure prediction across varied equipment types.
 
 **Example Scenario:**  
-**PROMPT:** Given three equipment logs and outcomes, predict the outcome for a fourth log.
+## **PROMPT:** 
+Given three equipment logs and outcomes, predict the outcome for a fourth log.
 
 
-**AI Tools Response**
-**ChatGPT** 
-## 📊 Equipment Logs and Prediction
+## **AI Tools Response**
+## **ChatGPT** 
+### 📊 Equipment Logs and Prediction
 
 This section demonstrates how to use sensor data logs for failure prediction and analysis. Given a set of historical equipment logs and their outcomes, the AI model can predict the outcome of a new log.
 
@@ -128,9 +130,7 @@ This section demonstrates how to use sensor data logs for failure prediction and
 - **Temperature (°C):** 88  
 - **Vibration (mm/s):** 7.0  
 - **Pressure (bar):** 4.6  
-
-**Prompt:**  
-"Given these three equipment logs and their outcomes, predict the outcome for this fourth log:  
+  
 **Log 4:**  
 - **Temperature:** 88°C  
 - **Vibration:** 7.0 mm/s  
@@ -139,8 +139,8 @@ This section demonstrates how to use sensor data logs for failure prediction and
 Explain whether a failure is likely or not and justify your prediction based on the previous data."
 
 
-**Sider**
-## 📊 Equipment Logs and Prediction
+## **Sider**
+### 📊 Equipment Logs and Prediction
 
 This section demonstrates how to use sensor data logs for failure prediction and analysis. Given a set of historical equipment logs and their outcomes, the AI model can predict the outcome of a new log.
 
@@ -194,12 +194,13 @@ Encourages the model to reason step-by-step.
 Used for diagnostics and detailed failure explanation.
 
 **Example Scenario:**  
-**PROMPT:** “Why is this motor at risk? Reason step-by-step using temperature and vibration data.”
+## **PROMPT:** 
+“Why is this motor at risk? Reason step-by-step using temperature and vibration data.”
 
 
-**AI Tools Response**
-**ChatGPT** 
-## 📊 Equipment Log Analysis: Motor Failure Risk
+## **AI Tools Response**
+## **ChatGPT** 
+### 📊 Equipment Log Analysis: Motor Failure Risk
 
 This section demonstrates the step-by-step reasoning for predicting the risk of motor failure based on temperature and vibration data. By analyzing the temperature and vibration levels from previous logs, we can identify potential issues and forecast the likelihood of failure.
 
@@ -253,8 +254,8 @@ Motors under such conditions often experience premature failure if not inspected
 ### 🛠️ **Recommendation:**
 Immediate inspection and maintenance actions are recommended to prevent severe motor damage or complete failure. Monitoring temperature and vibration regularly can help detect and mitigate risks early.
 
-**Sider**
-## 📊 Equipment Log Analysis: Motor Failure Risk
+## **Sider**
+### 📊 Equipment Log Analysis: Motor Failure Risk
 
 This section demonstrates the step-by-step reasoning for predicting the risk of motor failure based on temperature and vibration data. By analyzing the temperature and vibration levels from previous logs, we can identify potential issues and forecast the likelihood of failure.
 
@@ -288,12 +289,13 @@ Explores multiple reasoning paths before choosing the best.
 Supports complex decision-making like maintenance scheduling.
 
 **Example Scenario:**  
-**PROMPT:** “Evaluate three maintenance schedules and recommend the most efficient.”
+## **PROMPT:** 
+“Evaluate three maintenance schedules and recommend the most efficient.”
 
 
-**AI Tools Response**
-**ChatGPT** 
-## 🛠️ Maintenance Schedules Evaluation
+## **AI Tools Response**
+## **ChatGPT** 
+### 🛠️ Maintenance Schedules Evaluation
 
 This section evaluates three different maintenance schedules and recommends the most efficient one based on their impact on equipment performance, downtime, and overall cost.
 
@@ -320,8 +322,8 @@ After evaluating the three maintenance schedules, **Predictive Maintenance (PdM)
 
 ---
 
-**Sider**
-## 🛠️ Maintenance Schedules Evaluation
+## **Sider**
+### 🛠️ Maintenance Schedules Evaluation
 
 This section evaluates three different maintenance schedules and recommends the most efficient one based on their impact on equipment performance, downtime, and overall cost.
 
@@ -367,12 +369,13 @@ Assigns a persona or role to the model.
 Generates expert-level, realistic responses.
 
 **Example Scenario:**  
-**PROMPT:** “You are a maintenance engineer. Analyze sensor data and suggest actions.”
+## **PROMPT:** 
+“You are a maintenance engineer. Analyze sensor data and suggest actions.”
 
 
-**AI Tools Response**
-**ChatGPT** 
-## 🛠️ Sensor Data Analysis and Suggested Actions
+## **AI Tools Response**
+## **ChatGPT** 
+### 🛠️ Sensor Data Analysis and Suggested Actions
 
 This section involves analyzing sensor data from equipment and suggesting appropriate maintenance actions based on the findings.
 
@@ -420,8 +423,8 @@ You have received the following sensor data from the equipment, and your task is
 ### 🛠️ **Conclusion:**
 As a maintenance engineer, your primary action should be to **inspect** the equipment immediately to prevent further damage. Once the issue is identified, necessary repairs or adjustments can be made to return the equipment to normal operation. Continued monitoring will help ensure that any future problems are detected early.
 
-**Sider**
-## 🛠️ Sensor Data Analysis and Suggested Actions
+## **Sider**
+### 🛠️ Sensor Data Analysis and Suggested Actions
 
 This section analyzes the latest sensor data and provides suggested actions for maintenance based on the findings.
 
@@ -473,9 +476,9 @@ Interactive decision trees or diagnostics.
 **PROMPT:** “If sensor A > 90, trigger alert. Otherwise, check next metric.”
 
 
-**AI Tools Response**
-**ChatGPT** 
-## 🛠️ Sensor Data Monitoring and Alerting
+## **AI Tools Response**
+## **ChatGPT** 
+### 🛠️ Sensor Data Monitoring and Alerting
 
 This section outlines the procedure for monitoring sensor data and triggering alerts based on specific thresholds.
 
@@ -514,7 +517,7 @@ This system allows for automated and prioritized monitoring of critical sensor d
 
 ---
 
-**Sider**
+## **Sider**
 
 If Sensor A > 90:  
     Trigger alert  
@@ -532,11 +535,12 @@ Combines textual and non-textual inputs (e.g., graphs, tables).
 Useful when visual data (charts) must be analyzed alongside logs.
 
 **Example Scenario:**  
-**PROMPT:** “Given this pressure graph and maintenance report, summarize potential failures.”
+## **PROMPT:** 
+“Given this pressure graph and maintenance report, summarize potential failures.”
 
 
-**AI Tools Response**
-**ChatGPT** 
+## **AI Tools Response**
+## **ChatGPT** 
 #### **Pressure Graph:**
 - **Normal Pressure Range:** 3.5 - 4.0 bar
 - **Current Pressure Readings:** Fluctuating between 4.0 bar and 4.8 bar
@@ -581,8 +585,8 @@ Useful when visual data (charts) must be analyzed alongside logs.
    - If pressure components show signs of wear or malfunction, schedule a **proactive maintenance** or part replacement to prevent future pressure-related failures.
 
 ---
-**Sider**
-## 🛠️ Potential Failures Summary and Recommendations
+## **Sider**
+### 🛠️ Potential Failures Summary and Recommendations
 
 This section summarizes the potential failures based on the pressure graph and maintenance report, followed by recommended actions.
 
