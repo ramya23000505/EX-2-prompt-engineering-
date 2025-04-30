@@ -1,4 +1,4 @@
-# EX-2-prompt-engineering-Comparative Analysis of different types of Prompting patterns and explain with Various Test scenerios
+# EX-5-prompt-engineering-Comparative Analysis of different types of Prompting patterns and explain with Various Test scenerios
 ```
 Name: Ramya R
 Reg No: 212223230169
