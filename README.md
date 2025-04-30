@@ -30,6 +30,7 @@ Used for defining concepts or initiating tasks from scratch.
 **PROMPT:** “Describe common signs of equipment failure based on temperature and vibration changes.”
 
 **AI Tools Response**
+
 **ChatGPT** Common signs of equipment failure often manifest as abnormal changes in temperature and vibration patterns. An increase in temperature beyond normal operating levels can indicate issues such as friction due to lack of lubrication, bearing wear, or electrical faults like overheating motors. Elevated vibration levels are typically early indicators of mechanical problems such as imbalance, misalignment, loose parts, or worn components. When temperature and vibration increase simultaneously, it often suggests compound issues, such as bearing failure or shaft misalignment causing heat due to excessive friction. Monitoring these parameters over time helps in detecting trends and triggering maintenance actions before actual breakdowns occur.
 
 **Sider** Equipment failure often manifests through certain signs in temperature and vibration data. An increase in temperature beyond normal operating ranges can indicate overheating, bearing issues, or lubrication problems. Similarly, abnormal vibration patterns—such as higher amplitude or unusual frequency components—may suggest misalignment, imbalance, or worn-out parts. Monitoring these indicators helps in early detection of potential failures, allowing for timely maintenance to prevent costly breakdowns.
@@ -47,7 +48,9 @@ Good for generating structured data based on a known pattern.
 **PROMPT:** Provide one sensor log with analysis, then ask the model to analyze a similar new log.
 
 **AI Tools Response**
+
 **ChatGPT**  
+
 **Timestamp:** 2025-04-30 11:15:00  
 **Machine ID:** MX-104  
 **Temperature (°C):** 88  
@@ -55,10 +58,15 @@ Good for generating structured data based on a known pattern.
 **Pressure (bar):** 4.6
 
 **Sider**
-**Timestamp:** 2025-04-28 09:30:00  
+
+**Timestamp:**  2025-04-28 09:30:00  
+
 **Machine ID:** MX-102  
+
 **Temperature (°C):** 85  
+
 **Vibration (mm/s):** 7.2  
+
 **Pressure (bar):** 4.8
 ---
 
